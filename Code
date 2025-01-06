@@ -13,7 +13,12 @@ namespace GovernmentServicesApp
             Console.WriteLine("3. HM Revenue and Customs (HMRC)");
             Console.WriteLine("4. Driver and Vehicle Licensing Agency (DVLA)");
             Console.WriteLine("5. Exit");
-
+            Console.WriteLine("6. Home Office");
+            Console.WriteLine("7. Ministry of Justice (MoJ)");
+            Console.WriteLine("8. Department for Education (DfE)");
+            Console.WriteLine("9. Department for Environment, Food & Rural Affairs (DEFRA)");
+            Console.WriteLine("10. Department for Transport (DfT)");
+            Console.WriteLine("11. Department of Health and Social Care (DHSC)");
             bool running = true;
 
             while (running)
@@ -39,6 +44,24 @@ namespace GovernmentServicesApp
                         running = false;
                         Console.WriteLine("Thank you for using the UK Government Services Information App. Goodbye!");
                         break;
+                    case "6":
+                        Console.WriteLine("Home Office: https://www.gov.uk/government/organisations/home-office");
+                        break;
+                    case "7":
+                        Console.WriteLine("Ministry of Justice (MoJ): https://www.gov.uk/government/organisations/ministry-of-justice");
+                        break; 
+                    case "8":
+                        Console.WriteLine("Department for Education (DfE): https://www.gov.uk/government/organisations/department-for-education");
+                        break;
+                    case "9":
+                        Console.WriteLine("Department for Environment, Food & Rural Affairs (DEFRA): https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs");
+                        break;
+                    case "10":
+                        Console.WriteLine("Department for Transport (DfT): https://www.gov.uk/government/organisations/department-for-transport");
+                        break;
+                    case "11":
+                        Console.WriteLine("Department of Health and Social Care (DHSC): https://www.gov.uk/government/organisations/department-of-health-and-social-care");
+                        break;            
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
@@ -73,5 +96,43 @@ namespace GovernmentServicesApp
             Console.WriteLine("The DVLA is responsible for maintaining a database of drivers and vehicles in Great Britain.");
             Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency\n");
         }
+
+        static void DisplayHomeOfficeInfo()
+        {
+            Console.WriteLine("\nHome Office:");
+            Console.WriteLine("The Home Office is responsible for immigration, security, and law and order.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/home-office\n");
+        }
+
+        static void DisplayMoJInfo()
+        {
+            Console.WriteLine("\nMinistry of Justice (MoJ):");
+            Console.WriteLine("The MoJ is responsible for the justice system in England and Wales.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/ministry-of-justice\n");
+        }
+        static void DisplayDfEInfo()
+        {
+            Console.WriteLine("\nDepartment for Education (DfE):");
+            Console.WriteLine("The DfE is responsible for education and children's services.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/department-for-education\n");
+        }
+        static void DisplayDEFRAInfo()
+        {
+            Console.WriteLine("\nDepartment for Environment, Food & Rural Affairs (DEFRA):");
+            Console.WriteLine("DEFRA is responsible for environmental protection, food production, and rural affairs.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs\n");
+        }
+        static void DisplayDfTInfo()
+        {
+            Console.WriteLine("\nDepartment for Transport (DfT):");
+            Console.WriteLine("The DfT is responsible for the UK's transport infrastructure.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/department-for-transport\n");
+        }
+        static void DisplayDHSCInfo()
+        {
+            Console.WriteLine("\nDepartment of Health and Social Care (DHSC):");
+            Console.WriteLine("The DHSC is responsible for health and social care policy in the UK.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/department-of-health-and-social-care\n");    
     }
+}
 }
