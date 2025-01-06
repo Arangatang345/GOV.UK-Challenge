@@ -1,0 +1,77 @@
+using System;
+
+namespace GovernmentServicesApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the UK Government Services Information App!");
+            Console.WriteLine("Please select a service:");
+            Console.WriteLine("1. National Health Service (NHS)");
+            Console.WriteLine("2. Department for Work and Pensions (DWP)");
+            Console.WriteLine("3. HM Revenue and Customs (HMRC)");
+            Console.WriteLine("4. Driver and Vehicle Licensing Agency (DVLA)");
+            Console.WriteLine("5. Exit");
+
+            bool running = true;
+
+            while (running)
+            {
+                Console.Write("Enter your choice: ");
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        DisplayNHSInfo();
+                        break;
+                    case "2":
+                        DisplayDWPInfo();
+                        break;
+                    case "3":
+                        DisplayHMRCInfo();
+                        break;
+                    case "4":
+                        DisplayDVLAInfo();
+                        break;
+                    case "5":
+                        running = false;
+                        Console.WriteLine("Thank you for using the UK Government Services Information App. Goodbye!");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+            }
+        }
+
+        static void DisplayNHSInfo()
+        {
+            Console.WriteLine("\nNational Health Service (NHS):");
+            Console.WriteLine("The NHS provides healthcare services to residents of the UK.");
+            Console.WriteLine("For more information, visit: https://www.nhs.uk\n");
+        }
+
+        static void DisplayDWPInfo()
+        {
+            Console.WriteLine("\nDepartment for Work and Pensions (DWP):");
+            Console.WriteLine("The DWP is responsible for welfare and pension policy.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/department-for-work-pensions\n");
+        }
+
+        static void DisplayHMRCInfo()
+        {
+            Console.WriteLine("\nHM Revenue and Customs (HMRC):");
+            Console.WriteLine("HMRC is responsible for the collection of taxes.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/hm-revenue-customs\n");
+        }
+
+        static void DisplayDVLAInfo()
+        {
+            Console.WriteLine("\nDriver and Vehicle Licensing Agency (DVLA):");
+            Console.WriteLine("The DVLA is responsible for maintaining a database of drivers and vehicles in Great Britain.");
+            Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency\n");
+        }
+    }
+}
