@@ -12,13 +12,13 @@ namespace GovernmentServicesApp
             Console.WriteLine("2. Department for Work and Pensions (DWP)");
             Console.WriteLine("3. HM Revenue and Customs (HMRC)");
             Console.WriteLine("4. Driver and Vehicle Licensing Agency (DVLA)");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. Department of Health and Social Care (DHSC)");
             Console.WriteLine("6. Home Office");
             Console.WriteLine("7. Ministry of Justice (MoJ)");
             Console.WriteLine("8. Department for Education (DfE)");
             Console.WriteLine("9. Department for Environment, Food & Rural Affairs (DEFRA)");
             Console.WriteLine("10. Department for Transport (DfT)");
-            Console.WriteLine("11. Department of Health and Social Care (DHSC)");
+            Console.WriteLine("11. Exit");
             bool running = true;
 
             while (running)
@@ -41,8 +41,7 @@ namespace GovernmentServicesApp
                         DisplayDVLAInfo();
                         break;
                     case "5":
-                        running = false;
-                        Console.WriteLine("Thank you for using the UK Government Services Information App. Goodbye!");
+                         Console.WriteLine("Department of Health and Social Care (DHSC): https://www.gov.uk/government/organisations/department-of-health-and-social-care");
                         break;
                     case "6":
                         Console.WriteLine("Home Office: https://www.gov.uk/government/organisations/home-office");
@@ -60,8 +59,9 @@ namespace GovernmentServicesApp
                         Console.WriteLine("Department for Transport (DfT): https://www.gov.uk/government/organisations/department-for-transport");
                         break;
                     case "11":
-                        Console.WriteLine("Department of Health and Social Care (DHSC): https://www.gov.uk/government/organisations/department-of-health-and-social-care");
-                        break;            
+                        running = false;
+                        Console.WriteLine("Thank you for using the UK Government Services Information App. Goodbye!");
+                        break;           
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
