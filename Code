@@ -12,7 +12,7 @@ namespace GovernmentServicesApp
             Console.WriteLine("2. Department for Work and Pensions (DWP)");
             Console.WriteLine("3. HM Revenue and Customs (HMRC)");
             Console.WriteLine("4. Driver and Vehicle Licensing Agency (DVLA)");
-            Console.WriteLine("5. Department of Health and Social Care (DHSC)");
+            Console.WriteLine("5. Department of Health and Social Care (DHSC)"); 
             Console.WriteLine("6. Home Office");
             Console.WriteLine("7. Ministry of Justice (MoJ)");
             Console.WriteLine("8. Department for Education (DfE)");
@@ -41,27 +41,28 @@ namespace GovernmentServicesApp
                         DisplayDVLAInfo();
                         break;
                     case "5":
-                         Console.WriteLine("Department of Health and Social Care (DHSC): https://www.gov.uk/government/organisations/department-of-health-and-social-care");
-                        break;
+                        DisplayDHSCInfo();
+                        break; 
                     case "6":
-                        Console.WriteLine("Home Office: https://www.gov.uk/government/organisations/home-office");
+                        DisplayHomeOfficeInfo();
                         break;
                     case "7":
-                        Console.WriteLine("Ministry of Justice (MoJ): https://www.gov.uk/government/organisations/ministry-of-justice");
+                        DisplayMoJInfo();
                         break; 
                     case "8":
-                        Console.WriteLine("Department for Education (DfE): https://www.gov.uk/government/organisations/department-for-education");
+                        DisplayDfEInfo();
                         break;
                     case "9":
-                        Console.WriteLine("Department for Environment, Food & Rural Affairs (DEFRA): https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs");
+                        DisplayDEFRAInfo();
                         break;
                     case "10":
-                        Console.WriteLine("Department for Transport (DfT): https://www.gov.uk/government/organisations/department-for-transport");
+                        DisplayDfTInfo();
                         break;
                     case "11":
                         running = false;
                         Console.WriteLine("Thank you for using the UK Government Services Information App. Goodbye!");
-                        break;           
+                        break;
+           
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
@@ -134,5 +135,6 @@ namespace GovernmentServicesApp
             Console.WriteLine("The DHSC is responsible for health and social care policy in the UK.");
             Console.WriteLine("For more information, visit: https://www.gov.uk/government/organisations/department-of-health-and-social-care\n");    
     }
+
 }
 }
